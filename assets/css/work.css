@@ -1,0 +1,74 @@
+body {
+    /* to go with the tab background color */
+    background-color: #999999;
+}
+/* Styling for left-side vertical tabs */
+.nav-tabs--vertical {
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-tabs--left .nav-link {
+    transition: border-color .125s ease-in;
+    font-family: 'Futura', Helvetica, sans-serif;
+    color: #ff90ac;
+    background-color: white;
+    height: 50vh
+}
+
+.nav-tabs--left .nav-link:hover {
+    background-color: #f7f7f7;
+    border-color: transparent;
+}
+
+.nav-tabs--left .nav-link.active {
+    background-color: #4d4d4d;
+    color: #67e037;
+    font-family: monospace;
+    font-size: 13pt;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    margin-right: -1px;
+}
+
+.nav-tabs--left .nav-link.active:hover {
+    border-color: #fffb00 #fff #fffb00 #fffb00;
+}
+
+/* Styling for tab content area */
+.tab-content {
+    margin: 15px 20px;
+    height: 96vh;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-family: monospace;
+}
+
+.tab-pane {
+    position: relative;
+}
+
+/* Styling for right-side navbar */
+.sectionbar {
+    position: relative;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+/* Styling for tab-content text */
+a>h1,
+p {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Styling for ability cards */
+.card {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: black;
+}

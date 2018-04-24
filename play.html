@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>My Non-work Interests</title>
+
+<!-- External Stylesheets - Bootstrap Dependencies -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+
+<!-- Own stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/play.css">
+
+</head>
+
+<body>
+    <div class="d-flex flex-row">
+        <!-- Vertical NavTabs on left to switch content (work/play) -->
+        <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left ">
+            <li class="nav-item">
+                <a href="work.html" class="nav-link" aria-controls="work">W
+                    <br>O
+                    <br>R
+                    <br>K</a>
+            </li>
+            <li class="nav-item">
+                <a href="#ipsum" class="nav-link active" data-toggle="tab" role="tab" aria-controls="ipsum">P
+                    <br>L
+                    <br>A
+                    <br>Y</a>
+            </li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="work" role="tabpanel">
+                <!-- Content removed; as the work tab content should not be 
+                    visible from this page -->
+            </div>
+            <div class="tab-pane fade show active" id="ipsum" role="tabpanel">
+                <h1>Photos</h1>
+                <!-- Image slideshow using Galleria library -->
+                <div class="galleria">
+                    <img src='assets/images/insta/room.png'>
+                    <img src='assets/images/insta/bed.png'>
+                    <img src='assets/images/insta/lunar.png'>
+                    <img src='assets/images/insta/celebration.jpg'>
+                    <img src='assets/images/insta/snow.jpg'>
+                    <img src='assets/images/insta/dark.jpg'>
+                    <img src='assets/images/insta/rain.jpg'>
+                    <img src='assets/images/insta/antiques.png'>
+                </div>
+
+                <h1>Music</h1>
+                <!-- Embed code taken from Spotify -->
+                <iframe id="spotify" src="https://open.spotify.com/embed/user/1179051381/playlist/5WhW2FVUCeb6Io9DJQ3z2k" width="300" height="380"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <br>
+                <p>I wanted to include more stuff here, like a photo gallery; but apparently Google removed embed/slideshow
+                    capability when they moved from Picasa to Google Photos...</p>
+
+                <!-- <iframe src="http://a.co/3DUeGfp"></iframe> -->
+                <!-- worked initially; but doesn't work on testing with
+                different browsers because of Amazon blocking cross-origin
+                iframe -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!-- External Scripts - Galleria Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+    <script>
+        (function () {
+            Galleria.loadTheme(
+                'https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+    </script>
+    <!-- script included in-line as per Galleria documentation suggestion. -->
+
+    <!-- External Scripts - Bootstrap Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
